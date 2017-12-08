@@ -1,16 +1,6 @@
-# holman does dotfiles
+# mfullbrook does dotfiles
 
-Your dotfiles are how you personalize your system. These are mine.
-
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
-
-If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the
-subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+This repo is a fork of holman's dotfiles.  I've taken his excellent work and tailored it to my needs.
 
 ## topical
 
@@ -19,13 +9,6 @@ forked dotfiles — say, "Java" — you can simply add a `java` directory and pu
 files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
-
-## what's inside
-
-A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
-above and see what components may mesh up with you.
-[Fork it](https://github.com/holman/dotfiles/fork), remove what you don't
-use, and build on what you do use.
 
 ## components
 
@@ -48,12 +31,19 @@ There's a few special files in the hierarchy.
 
 ## install
 
-Run this:
+Run this to get the dotfiles and packages installed:
 
 ```sh
 git clone https://github.com/holman/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
+```
+
+To configure the shell:
+
+```sh
+sudo sh -c 'echo `which zsh` >> /etc/shells'
+chsh -s `which zsh`
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.

@@ -1,43 +1,98 @@
-cask_args appdir: '/Applications'
-
+tap 'homebrew/core'
 tap 'homebrew/bundle'
-tap 'puma/puma'
+tap 'caskroom/cask'
+tap 'homebrew/homebrew-php'
 
-brew 'ack'
+# Install ZSH
+brew 'zsh'
+brew 'zsh-completions'
+
+# Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
-brew 'go'
-brew 'grc'
-brew 'imagemagick'
-brew 'jp2a'
-brew 'jq'
-brew 'libcaca', args: ['with-imlib2']
-brew 'libgit2'
-brew 'openssl'
-brew 'node'
-brew 'readline'
-brew 'postgresql'
-brew 'puma/puma/puma-dev'
-brew 'ruby-build'
-brew 'rbenv'
-brew 'roundup'
-brew 'spaceman-diff'
-brew 'spark'
-brew 'unrar'
-brew 'wget'
-brew 'yarn'
-brew 'youtube-dl'
 
-cask '1password'
-cask 'adium'
-cask 'atom'
-cask 'firefox'
-cask 'garmin-express'
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
+
+# Install Binaries
+brew 'fasd'
+brew 'tree'
+brew 'the_silver_searcher'
+brew 'git'
+brew 'hub'
+brew 'mackup'
+brew 'mas'    # Mac App Store CLI
+brew 'wget'
+
+
+# NODE.JS
+brew 'node'
+brew 'yarn'
+
+# PHP
+brew 'freetype'
+brew 'jpeg'
+brew 'libpng'
+brew 'gd'
+brew 'zlib'
+brew 'php72'
+brew 'php72-redis'
+brew 'php72-xdebug'
+brew 'php72-intl'
+brew 'php72-imagick'
+brew 'mariadb'
+brew 'phpunit'
+brew 'boris'
+brew 'composer'
+brew 'psysh'
+
+# MacOS apps
+cask 'aerial'
+cask 'alfred'
+cask 'bartender'
+cask 'cyberduck'
+cask 'daisydisk'
+cask 'dash'
+cask 'dropbox'
+cask 'djay-pro'
 cask 'google-chrome'
-cask 'handbrake'
-cask 'mapbox-studio'
-cask 'seashore'
+cask 'evernote'
+cask 'fantastical'
+cask 'iterm2'
+cask 'jetbrains-toolbox'
+cask 'kaleidoscope'
+cask 'keepingyouawake'
+cask 'kindle'
+cask 'microsoft-office'
+cask 'moom'
+cask 'mysqlworkbench'
+cask 'onedrive'
+cask 'quickbooks-online'
+cask 'sequel-pro'
+cask 'shuttle'
 cask 'slack'
-cask 'steam'
+cask 'sketch'
+cask 'sketchup'
+cask 'sublime-text'
 cask 'transmission'
-cask 'tunnelbear'
+cask 'tower'
+cask 'viscosity'
+cask 'visual-studio-code'
 cask 'vlc'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+
+# Fonts
+cask 'font-source-code-pro-for-powerline'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-source-serif-pro'
+
+
