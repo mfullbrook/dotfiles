@@ -1,0 +1,11 @@
+{
+    "require": {
+        "phpunit/phpunit": "^6.5",
+        "psy/psysh": "^0.8.15",
+        "laravel/installer": "^1.4",
+        "laravel/lumen-installer": "^1.0",
+        "laravel/spark-installer": "^1.2",
+        "laravel/valet": "^2.0",
+        "statamic/cli": "^1.0"
+    }
+}
