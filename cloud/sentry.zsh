@@ -1,0 +1,3 @@
+# SENTRY
+export SENTRY_AUTH_TOKEN=6a3faabf1b974c548bcbe5cc59e5a7656b72c670a7ec4dd6837257e2f152fcc6
+export SENTRY_ORG=universal-packing
