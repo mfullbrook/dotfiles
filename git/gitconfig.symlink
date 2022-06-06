@@ -38,7 +38,7 @@
 	smudge = git-lfs smudge -- %f
 [user]
 	name = Mark Fullbrook
-	email = mark.fullbrook@universalpacking.co.uk
+	email = mark@fullbrook.me
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

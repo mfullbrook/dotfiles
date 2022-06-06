@@ -1,4 +1,7 @@
 alias art='php artisan'
 alias tinker='php artisan tinker'
+alias php7='/usr/local/Cellar/php@7.4/7.4.27/bin/php'
+alias php5='/usr/local/Cellar/php@5.6/5.6.40_4/bin/php'
 alias composer='php -c ~/.dotfiles/php/disable-xdebug.ini /usr/local/bin/composer '
-
+alias composer7='php7 -c ~/.dotfiles/php/disable-xdebug.ini /usr/local/bin/composer '
+alias composer5='php5 -c ~/.dotfiles/php/disable-xdebug.ini /usr/local/bin/composer '
