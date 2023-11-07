@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# up
+#
+# `up` brings all the web development services up
+
+set -e
+
+open --background -a Docker
+
+takeout start --all
+
+sudo brew services start dnsmasq
+sudo brew services start nginx
+
+brew services start php
+brew services start php@5.6

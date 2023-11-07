@@ -28,3 +28,9 @@ myver_function() {
 	fi
 }
 alias myver=myver_function
+
+latest_modified() {
+	find . -type f -not -path './.git/*' -not -path './node_modules/*' \
+	       -not -path './vendor/*' -not -path './storage/*' -not -path './.idea/*' \
+	       -exec stat -f "%m %Sm %N" "{}" \; | sort -nr | head
+}

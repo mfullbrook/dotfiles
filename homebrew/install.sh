@@ -21,4 +21,6 @@ then
 
 fi
 
+brew bundle --file ~/dotfiles/homebrew/Brewfile
+
 exit 0

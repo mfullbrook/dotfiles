@@ -17,6 +17,7 @@
 [core]
 	excludesfile = /Users/mark/.gitignore
         editor = vim
+	autocrlf = input
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -47,3 +48,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/mark/.stCommitMsg
+[init]
+	defaultBranch = main

@@ -1,3 +1,2 @@
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
+# Set Spaceship ZSH as a prompt
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
